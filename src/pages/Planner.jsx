@@ -42,6 +42,10 @@ const Planner = () => {
     );
   }
 
+  if(!currentUser){
+    return null;
+  }
+
 
   const handleGeneratePlan = () => {
     if (!destination || !timeSlot) {
